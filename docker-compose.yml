@@ -29,6 +29,10 @@ services:
       - EDGEMED_USE_MEDGEMMA_LOCAL=true
       - EDGEMED_MEDGEMMA_MODEL_ID=google/medgemma-1.5-4b-it
       - EDGEMED_MEDGEMMA_DEVICE=cpu
+      # MedGemma is gated: accept terms at https://huggingface.co/google/medgemma-1.5-4b-it
+      # then set EDGEMED_HF_TOKEN or HF_TOKEN (e.g. run: HF_TOKEN=hf_xxx docker compose up local-app)
+      - EDGEMED_HF_TOKEN=${EDGEMED_HF_TOKEN:-}
+      - HF_TOKEN=${HF_TOKEN:-}
       - PYTHONPATH=/app
 
 volumes:

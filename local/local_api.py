@@ -35,6 +35,7 @@ if settings.USE_MEDGEMMA_LOCAL:
     extractor = MedGemmaExtractor(
         model_id=settings.MEDGEMMA_MODEL_ID,
         device=settings.MEDGEMMA_DEVICE,
+        token=settings.HF_TOKEN,
     )
     _extractor_name = "medgemma"
     _extractor_version = settings.MEDGEMMA_MODEL_ID.split("/")[-1]

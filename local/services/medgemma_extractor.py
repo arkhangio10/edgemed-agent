@@ -67,20 +67,33 @@ def _parse_record(data: dict) -> ClinicalRecord:
 
 
 class MedGemmaExtractor:
-    """HuggingFace-based MedGemma extractor for local offline use."""
+    """HuggingFace-based MedGemma extractor for local offline use.
+    MedGemma is gated: accept terms at the model page and set HF_TOKEN (or EDGEMED_HF_TOKEN).
+    """
 
-    def __init__(self, model_id: str = "google/medgemma-1.5-4b-it", device: str = "cuda"):
+    def __init__(
+        self,
+        model_id: str = "google/medgemma-1.5-4b-it",
+        device: str = "cuda",
+        token: str | None = None,
+    ):
         self.model_id = model_id
         self.device = device
+        self._token = token
         self._pipeline = None
         self.model_loaded = False
         self._load_model()
 
     def _load_model(self) -> None:
         """Lazy-load model and tokenizer via transformers pipeline."""
+        import os
+
         try:
             import torch
             from transformers import pipeline as hf_pipeline
+
+            # Gated model: use token from config or HF_TOKEN env
+            hf_token = self._token or os.environ.get("HF_TOKEN") or None
 
             logger.info("Loading MedGemma model '%s' on device '%s' ...", self.model_id, self.device)
 
@@ -94,6 +107,7 @@ class MedGemmaExtractor:
                 torch_dtype=dtype,
                 device_map=actual_device if actual_device == "cuda" else None,
                 device=None if actual_device == "cuda" else actual_device,
+                token=hf_token,
             )
             self.model_loaded = True
             logger.info("MedGemma model loaded successfully on %s", actual_device)

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from functools import lru_cache
 from pathlib import Path
+from typing import Optional
 
 from pydantic_settings import BaseSettings
 
@@ -19,10 +20,12 @@ class LocalSettings(BaseSettings):
     MAX_RETRY_COUNT: int = 5
     STORE_RAW_NOTES: bool = True
 
-    # MedGemma local model (optional)
+    # MedGemma local (Hugging Face). Model is gated: accept terms at
+    # https://huggingface.co/google/medgemma-1.5-4b-it and set HF token.
     USE_MEDGEMMA_LOCAL: bool = False
     MEDGEMMA_MODEL_ID: str = "google/medgemma-1.5-4b-it"
     MEDGEMMA_DEVICE: str = "cuda"  # "cuda" | "cpu"
+    HF_TOKEN: Optional[str] = None  # For gated model; or set env HF_TOKEN
 
     model_config = {"env_prefix": "EDGEMED_"}
 

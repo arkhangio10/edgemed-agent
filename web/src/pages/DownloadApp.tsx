@@ -183,6 +183,19 @@ docker compose up local-app`}
         </CardContent>
       </Card>
 
+      <Card className="border-amber-200/50 bg-amber-50/50 dark:border-amber-800/50 dark:bg-amber-950/20">
+        <CardContent className="flex items-start gap-4 pt-6">
+          <div>
+            <p className="font-medium text-foreground text-sm">MedGemma on Hugging Face (gated)</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              The local app uses MedGemma from Hugging Face. You must accept the Health AI Developer Foundation terms on the{" "}
+              <a href="https://huggingface.co/google/medgemma-1.5-4b-it" target="_blank" rel="noopener noreferrer" className="underline">model page</a>
+              {" "}and be logged in. For Docker, set your token: <code className="text-xs bg-muted px-1 rounded">HF_TOKEN=hf_... docker compose up local-app</code> or add <code className="text-xs bg-muted px-1 rounded">EDGEMED_HF_TOKEN</code> to your environment.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
       <Card className="border-success/20 bg-success/5">
         <CardContent className="flex items-start gap-4 pt-6">
           <Shield className="h-5 w-5 text-success shrink-0" />
