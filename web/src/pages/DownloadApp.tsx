@@ -6,18 +6,19 @@ import { useState } from "react";
 
 const steps = [
   { step: "1", title: "Install Docker Desktop", desc: "Download from docker.com and ensure Docker is running." },
-  { step: "2", title: "Clone & Run", desc: "Clone the repository and start the containers." },
-  { step: "3", title: "Open Local UI", desc: "Navigate to http://localhost:8501 in your browser." },
-  { step: "4", title: "Use Offline", desc: "Extraction works without internet. Sync happens when connectivity returns." },
+  { step: "2", title: "Clone the repository", desc: "Open a terminal and run the commands below. This downloads the project to your machine." },
+  { step: "3", title: "Start the local app", desc: "In the project folder run: docker compose up local-app (API + UI run in one container)." },
+  { step: "4", title: "Open the app", desc: "In your browser go to http://localhost:8501" },
+  { step: "5", title: "Use offline", desc: "Extraction works without internet. To test: once the app is open, disconnect the network. Sync resumes when connectivity returns." },
 ];
 
-const REPO_URL = "https://github.com/your-org/edgemed-agent";
+const REPO_URL = "https://github.com/arkhangio10/edgemed-agent";
 
 export default function DownloadApp() {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
 
-  const cloneCommand = `git clone ${REPO_URL}.git\ncd edgemed-agent\ndocker compose up`;
+  const cloneCommand = `git clone ${REPO_URL}.git\ncd edgemed-agent\ndocker compose up local-app`;
 
   const handleCopyCommand = async () => {
     try {
@@ -31,9 +32,9 @@ export default function DownloadApp() {
   };
 
   const handleDownloadDocker = () => {
-    // Generate a docker-compose.yml as a downloadable file
+    // Same as repo: local-app (API + Streamlit) + optional cloud-api
     const dockerCompose = `# EdgeMed Agent — Docker Compose
-# Run: docker compose up
+# Place in project root after cloning. Run: docker compose up local-app
 version: "3.9"
 
 services:
@@ -46,29 +47,28 @@ services:
     env_file:
       - .env
     environment:
-      - EDGEMED_DEMO_MODE_ENABLED=true
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
 
-  local-api:
+  local-app:
     build:
       context: .
       dockerfile: local/Dockerfile
     ports:
-      - "8081:8081"
-    env_file:
-      - .env
+      - "8501:8501"
+      - "8000:8000"
+    volumes:
+      - ./shared:/app/shared
+      - ./local/keys:/app/local/keys
+      - local-data:/app/local/data
     environment:
       - EDGEMED_CLOUD_API_URL=http://cloud-api:8080
+      - EDGEMED_MODE=prod
+      - PYTHONPATH=/app
 
-  streamlit-ui:
-    build:
-      context: .
-      dockerfile: local/Dockerfile.streamlit
-    ports:
-      - "8501:8501"
-    environment:
-      - LOCAL_API_URL=http://local-api:8081
-    depends_on:
-      - local-api
+volumes:
+  local-data:
 `;
 
     const blob = new Blob([dockerCompose], { type: "text/yaml" });
@@ -78,7 +78,10 @@ services:
     a.download = "docker-compose.yml";
     a.click();
     URL.revokeObjectURL(url);
-    toast({ title: "docker-compose.yml downloaded", description: "Place it in the cloned repo root and run: docker compose up" });
+    toast({
+      title: "docker-compose.yml downloaded",
+      description: "Place it in the cloned repo root. Then run: docker compose up local-app",
+    });
   };
 
   const handleDownloadNotes = () => {
@@ -122,7 +125,7 @@ services:
           onClick={handleDownloadDocker}
         >
           <Download className="h-4 w-4" />
-          Download Docker Package
+          Download docker-compose.yml
         </Button>
         <Button
           id="download-notes-btn"
@@ -134,6 +137,9 @@ services:
           Download Demo Notes Bundle
         </Button>
       </div>
+      <p className="text-xs text-muted-foreground">
+        The repo already includes docker-compose.yml. Download the file above only if you want this config elsewhere. Run the terminal commands to clone and start the app.
+      </p>
 
       <Card>
         <CardHeader className="pb-3">
@@ -168,7 +174,7 @@ services:
             <pre className="text-sm font-mono text-foreground">
               {`git clone ${REPO_URL}.git
 cd edgemed-agent
-docker compose up`}
+docker compose up local-app`}
             </pre>
           </div>
         </CardContent>
