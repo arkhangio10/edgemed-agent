@@ -5,3 +5,8 @@ pydantic>=2.9.0
 pydantic-settings>=2.5.0
 tink>=1.10.0
 httpx>=0.27.0
+
+# MedGemma local (Hugging Face)
+torch>=2.0.0
+transformers>=4.40.0
+accelerate>=0.30.0

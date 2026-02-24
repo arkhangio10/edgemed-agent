@@ -65,6 +65,9 @@ services:
     environment:
       - EDGEMED_CLOUD_API_URL=http://cloud-api:8080
       - EDGEMED_MODE=prod
+      - EDGEMED_USE_MEDGEMMA_LOCAL=true
+      - EDGEMED_MEDGEMMA_MODEL_ID=google/medgemma-1.5-4b-it
+      - EDGEMED_MEDGEMMA_DEVICE=cpu
       - PYTHONPATH=/app
 
 volumes:
