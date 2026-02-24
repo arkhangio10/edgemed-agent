@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+web/dist/
+web/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+.env.local
+.env.production
+*.keyset.json
+local/keys/*.json
+local/keys/*.keyset
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+local/data/
+
+# Tink keysets (generated at runtime)
+local/keys/edgemed_local.keyset.json
+
+# Eval outputs (regenerable)
+eval_results.json
+eval_summary.csv
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.docker/
+
+# Firebase
+.firebase/
+firebase/public/*
+!firebase/public/.gitkeep
+firebase-debug.log
+firestore-debug.log
+
+# Kaggle
+assets/kaggle/*
+!assets/kaggle/.gitkeep
+.kaggle/
+kaggle.json

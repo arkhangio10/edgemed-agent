@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/edgemed-api'
+      - '-f'
+      - 'cloud/Dockerfile'
+      - '.'
+
+images:
+  - 'gcr.io/$PROJECT_ID/edgemed-api'

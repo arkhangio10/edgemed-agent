@@ -1,0 +1,32 @@
+services:
+  cloud-api:
+    build:
+      context: .
+      dockerfile: cloud/Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./shared:/app/shared
+
+  local-app:
+    build:
+      context: .
+      dockerfile: local/Dockerfile
+    ports:
+      - "8501:8501"
+      - "8000:8000"
+    volumes:
+      - ./shared:/app/shared
+      - ./local/keys:/app/local/keys
+      - local-data:/app/local/data
+    environment:
+      - EDGEMED_CLOUD_API_URL=http://cloud-api:8080
+      - EDGEMED_MODE=prod
+      - PYTHONPATH=/app
+
+volumes:
+  local-data:

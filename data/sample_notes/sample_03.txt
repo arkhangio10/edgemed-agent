@@ -1,0 +1,7 @@
+CC: Anxiety
+HPI: 66yo male presents with anxiety. Symptoms started 2 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.
+Medications: Sertraline 50mg daily, Amlodipine 5mg daily
+Allergies: Sulfa (hives), Latex (contact dermatitis), Penicillin (rash)
+Assessment: 1. Iron deficiency anemia 2. Osteoarthritis 3. Urinary tract infection
+Plan: EKG stat, troponins q6h, cardiology consult
+Follow-up: Return in 2 weeks for medication review

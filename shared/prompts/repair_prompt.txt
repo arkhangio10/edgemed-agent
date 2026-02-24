@@ -1,0 +1,21 @@
+You previously extracted clinical data from a note but some fields need correction.
+
+CURRENT EXTRACTION (may have issues):
+{current_record_json}
+
+FIELDS THAT NEED RE-EXTRACTION: {fields_to_repair}
+ISSUES FOUND: {issues}
+
+ORIGINAL NOTE:
+---
+{note_text}
+---
+
+INSTRUCTIONS:
+1. Re-extract ONLY the listed fields from the original note.
+2. Do NOT change any other fields.
+3. If the information is genuinely not present in the note, return "unknown" for that field.
+4. NEVER invent information.
+5. Return ONLY a JSON object with the corrected fields.
+
+Return ONLY the JSON object with the repaired fields.

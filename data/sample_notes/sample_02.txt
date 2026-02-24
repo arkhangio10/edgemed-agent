@@ -1,0 +1,7 @@
+CC: Pregnancy Check-Up
+HPI: 82yo male presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports sudden onset. No significant past medical history.
+Medications: Glipizide 5mg daily
+Allergies: Latex (contact dermatitis), NSAIDs (GI bleeding), Aspirin (bronchospasm)
+Assessment: 1. Asthma exacerbation 2. Type 2 diabetes mellitus 3. Hyperlipidemia
+Plan: Start antibiotics (Glipizide), follow up in 3 days if not improving
+Follow-up: Return in 1 month

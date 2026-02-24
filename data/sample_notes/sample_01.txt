@@ -1,0 +1,7 @@
+CC: Fatigue
+HPI: 32yo male presents with fatigue. Symptoms started 1 days ago. Patient reports gradual onset. Past medical history includes Osteoarthritis.
+Medications: Omeprazole 20mg daily
+Allergies: NKDA
+Assessment: 1. Osteoarthritis
+Plan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks
+Follow-up: Return in 2 weeks

@@ -1,0 +1,8 @@
+# Extra dependencies for MedGemma local model
+# Install only when USE_MEDGEMMA_LOCAL=true
+# Requires ~16 GB RAM; GPU recommended for reasonable speed
+transformers>=4.45.0
+accelerate>=1.0.0
+torch>=2.4.0
+sentencepiece>=0.2.0
+protobuf>=5.28.0

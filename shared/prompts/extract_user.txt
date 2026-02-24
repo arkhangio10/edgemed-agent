@@ -1,0 +1,13 @@
+Extract structured clinical data from the following note. Language: {locale}.
+
+Include every diagnosis from the Assessment section in the "assessment" array.
+Include every medication from the Medications section in the "medications" array.
+For red_flags, include only present/positive findings, not denied symptoms.
+If the note does not contain a section, use null or [].
+
+CLINICAL NOTE:
+---
+{note_text}
+---
+
+Return ONLY the JSON object. Do not include any text outside the JSON.

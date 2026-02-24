@@ -1,0 +1,252 @@
+[
+  {
+    "note_id": "synth-0000",
+    "note_text": "CC: Fatigue\nHPI: 32yo male presents with fatigue. Symptoms started 1 days ago. Patient reports gradual onset. Past medical history includes Osteoarthritis.\nMedications: Omeprazole 20mg daily\nAllergies: NKDA\nAssessment: 1. Osteoarthritis\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0001",
+    "note_text": "CC: Pregnancy Check-Up\nHPI: 82yo male presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports sudden onset. No significant past medical history.\nMedications: Glipizide 5mg daily\nAllergies: Latex (contact dermatitis), NSAIDs (GI bleeding), Aspirin (bronchospasm)\nAssessment: 1. Asthma exacerbation 2. Type 2 diabetes mellitus 3. Hyperlipidemia\nPlan: Start antibiotics (Glipizide), follow up in 3 days if not improving\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0002",
+    "note_text": "CC: Anxiety\nHPI: 66yo male presents with anxiety. Symptoms started 2 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.\nMedications: Sertraline 50mg daily, Amlodipine 5mg daily\nAllergies: Sulfa (hives), Latex (contact dermatitis), Penicillin (rash)\nAssessment: 1. Iron deficiency anemia 2. Osteoarthritis 3. Urinary tract infection\nPlan: EKG stat, troponins q6h, cardiology consult\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0003",
+    "note_text": "CC: Joint Pain\nHPI: 55yo male presents with joint pain. Symptoms started 12 days ago. Patient reports gradual onset. No significant past medical history.\nMedications: None\nAllergies: Iodine contrast (anaphylaxis), Sulfa (hives), Codeine (nausea and vomiting)\nAssessment: 1. Acute coronary syndrome 2. Osteoarthritis 3. Community-acquired pneumonia\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0004",
+    "note_text": "CC: Pregnancy Check-Up\nHPI: 66yo female presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports intermittent symptoms. Past medical history includes Iron deficiency anemia.\nMedications: Aspirin 81mg daily\nAllergies: None documented\nAssessment: 1. Iron deficiency anemia 2. Type 2 diabetes mellitus\nPlan: EKG stat, troponins q6h, cardiology consult\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0005",
+    "note_text": "CC: Annual Physical\nHPI: 58yo male presents with annual physical. Symptoms started 10 days ago. Patient reports sudden onset. Past medical history includes Major depressive disorder.\nMedications: Aspirin 81mg daily, Prednisone 10mg daily, Atorvastatin 40mg daily\nAllergies: NKDA\nAssessment: 1. Major depressive disorder 2. Migraine headache\nPlan: Refer to pulmonology for further evaluation\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0006",
+    "note_text": "CC: Headache\nHPI: 35yo female presents with headache. Symptoms started 14 days ago. Patient reports gradual onset. Past medical history includes Urinary tract infection.\nMedications: None\nAllergies: Codeine (nausea and vomiting)\nAssessment: 1. Urinary tract infection 2. Essential hypertension 3. Chronic low back pain 4. Major depressive disorder\nPlan: CT scan of head, follow up with results\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0007",
+    "note_text": "CC: Skin Rash\nHPI: 32yo female presents with skin rash. Symptoms started 2 days ago. Patient reports intermittent symptoms. Past medical history includes GERD.\nMedications: None\nAllergies: NKDA\nAssessment: 1. GERD 2. Type 2 diabetes mellitus\nPlan: Refer to gastroenterology for further evaluation\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0008",
+    "note_text": "CC: Back Pain\nHPI: 82yo male presents with back pain. Symptoms started 1 days ago. Patient reports gradual onset. Past medical history includes GERD.\nMedications: Ibuprofen 400mg TID, Atorvastatin 40mg daily\nAllergies: None documented\nAssessment: 1. GERD 2. Type 2 diabetes mellitus 3. Essential hypertension\nPlan: EKG stat, troponins q6h, cardiology consult\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0009",
+    "note_text": "CC: Annual Physical\nHPI: 28yo male presents with annual physical. Symptoms started 12 days ago. Patient reports gradual onset. Past medical history includes Migraine headache.\nMedications: None\nAllergies: Codeine (nausea and vomiting)\nAssessment: 1. Migraine headache 2. Hyperlipidemia 3. Community-acquired pneumonia 4. Iron deficiency anemia\nPlan: Start antibiotics (medication), follow up in 3 days if not improving\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0010",
+    "note_text": "CC: Medication Review\nHPI: 69yo female presents with medication review. Symptoms started 2 days ago. Patient reports intermittent symptoms. Past medical history includes Urinary tract infection.\nMedications: Prednisone 10mg daily, Metformin 500mg BID, Omeprazole 20mg daily, Glipizide 5mg daily\nAllergies: NKDA\nAssessment: 1. Urinary tract infection\nPlan: Increase Prednisone dosage, recheck labs in 6 weeks\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0011",
+    "note_text": "CC: Shortness Of Breath\nHPI: 47yo male presents with shortness of breath. Symptoms started 4 days ago. Patient reports gradual onset. No significant past medical history.\nMedications: Metformin 500mg BID, Gabapentin 300mg TID\nAllergies: NKDA\nAssessment: 1. Acute coronary syndrome 2. Migraine headache 3. Hyperlipidemia 4. Urinary tract infection\nPlan: CT scan of lumbar spine, follow up with results\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0012",
+    "note_text": "CC: Hypertension Follow-Up\nHPI: 73yo female presents with hypertension follow-up. Symptoms started 4 days ago. Patient reports gradual onset. Past medical history includes Chronic low back pain.\nMedications: Prednisone 10mg daily, Glipizide 5mg daily, Lisinopril 10mg daily\nAllergies: None documented\nAssessment: 1. Chronic low back pain\nPlan: EKG stat, troponins q6h, cardiology consult\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0013",
+    "note_text": "CC: Cough And Fever\nHPI: 35yo female presents with cough and fever. Symptoms started 7 days ago. Patient reports sudden onset. Past medical history includes Asthma exacerbation.\nMedications: Prednisone 10mg daily, Omeprazole 20mg daily\nAllergies: None documented\nAssessment: 1. Asthma exacerbation 2. Migraine headache 3. Essential hypertension 4. Type 2 diabetes mellitus\nPlan: Continue current medications, follow up in 3 months\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0014",
+    "note_text": "CC: Cough And Fever\nHPI: 69yo male presents with cough and fever. Symptoms started 12 days ago. Patient reports sudden onset. No significant past medical history.\nMedications: Lisinopril 10mg daily, Albuterol 2 puffs PRN, Amlodipine 5mg daily\nAllergies: Aspirin (bronchospasm), Latex (contact dermatitis), Iodine contrast (anaphylaxis)\nAssessment: 1. Hyperlipidemia 2. Acute coronary syndrome 3. Community-acquired pneumonia 4. Asthma exacerbation\nPlan: Continue current medications, follow up in 3 months\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0015",
+    "note_text": "CC: Shortness Of Breath\nHPI: 79yo male presents with shortness of breath. Symptoms started 10 days ago. Patient reports gradual onset. Past medical history includes Chronic low back pain.\nMedications: Metformin 500mg BID, Atorvastatin 40mg daily, Acetaminophen 500mg PRN, Sertraline 50mg daily\nAllergies: NKDA\nAssessment: 1. Chronic low back pain 2. Essential hypertension\nPlan: Increase Metformin dosage, recheck labs in 6 weeks\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0016",
+    "note_text": "CC: Fatigue\nHPI: 84yo female presents with fatigue. Symptoms started 8 days ago. Patient reports intermittent symptoms. Past medical history includes Hyperlipidemia.\nMedications: Aspirin 81mg daily\nAllergies: Aspirin (bronchospasm)\nAssessment: 1. Hyperlipidemia 2. Osteoarthritis 3. Asthma exacerbation 4. Community-acquired pneumonia\nPlan: CT scan of abdomen, follow up with results\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0017",
+    "note_text": "CC: Pregnancy Check-Up\nHPI: 30yo male presents with pregnancy check-up. Symptoms started 12 days ago. Patient reports sudden onset. Past medical history includes Essential hypertension.\nMedications: Gabapentin 300mg TID\nAllergies: NKDA\nAssessment: 1. Essential hypertension 2. Acute coronary syndrome 3. Generalized anxiety disorder\nPlan: Refer to endocrinology for further evaluation\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0018",
+    "note_text": "CC: Pregnancy Check-Up\nHPI: 85yo male presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports intermittent symptoms. Past medical history includes Essential hypertension.\nMedications: Aspirin 81mg daily, Metformin 500mg BID\nAllergies: Aspirin (bronchospasm)\nAssessment: 1. Essential hypertension\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0019",
+    "note_text": "CC: Fatigue\nHPI: 51yo female presents with fatigue. Symptoms started 5 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.\nMedications: None\nAllergies: NKDA\nAssessment: 1. Iron deficiency anemia 2. Community-acquired pneumonia 3. Type 2 diabetes mellitus 4. Major depressive disorder\nPlan: EKG stat, troponins q6h, cardiology consult\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0020",
+    "note_text": "CC: Abdominal Pain\nHPI: 72yo male presents with abdominal pain. Symptoms started 6 days ago. Patient reports gradual onset. Past medical history includes Urinary tract infection.\nMedications: None\nAllergies: Penicillin (rash)\nAssessment: 1. Urinary tract infection 2. Migraine headache 3. Hyperlipidemia\nPlan: Start antibiotics (medication), follow up in 3 days if not improving\nFollow-up: Return in 3 months",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0021",
+    "note_text": "CC: Abdominal Pain\nHPI: 44yo male presents with abdominal pain. Symptoms started 13 days ago. Patient reports intermittent symptoms. Past medical history includes Chronic low back pain.\nMedications: Ibuprofen 400mg TID, Gabapentin 300mg TID\nAllergies: Codeine (nausea and vomiting), Sulfa (hives), Amoxicillin (rash)\nAssessment: 1. Chronic low back pain 2. Type 2 diabetes mellitus\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0022",
+    "note_text": "CC: Cough And Fever\nHPI: 49yo female presents with cough and fever. Symptoms started 6 days ago. Patient reports sudden onset. Past medical history includes Generalized anxiety disorder.\nMedications: Metformin 500mg BID, Albuterol 2 puffs PRN, Lisinopril 10mg daily, Prednisone 10mg daily, Omeprazole 20mg daily\nAllergies: NKDA\nAssessment: 1. Generalized anxiety disorder 2. Community-acquired pneumonia 3. Acute coronary syndrome 4. Major depressive disorder\nPlan: Continue current medications, follow up in 3 months\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0023",
+    "note_text": "CC: Post-Surgical Follow-Up\nHPI: 53yo female presents with post-surgical follow-up. Symptoms started 6 days ago. Patient reports intermittent symptoms. Past medical history includes Hyperlipidemia.\nMedications: Aspirin 81mg daily, Gabapentin 300mg TID, Metoprolol 25mg BID\nAllergies: None documented\nAssessment: 1. Hyperlipidemia 2. Urinary tract infection 3. Community-acquired pneumonia\nPlan: Continue current medications, follow up in 3 months\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0024",
+    "note_text": "CC: Diabetes Follow-Up\nHPI: 73yo male presents with diabetes follow-up. Symptoms started 6 days ago. Patient reports intermittent symptoms. Past medical history includes Generalized anxiety disorder.\nMedications: Omeprazole 20mg daily, Amlodipine 5mg daily, Lisinopril 10mg daily, Albuterol 2 puffs PRN\nAllergies: NKDA\nAssessment: 1. Generalized anxiety disorder 2. Chronic low back pain\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0025",
+    "note_text": "CC: Hypertension Follow-Up\nHPI: 56yo female presents with hypertension follow-up. Symptoms started 10 days ago. Patient reports sudden onset. Past medical history includes Acute coronary syndrome.\nMedications: Albuterol 2 puffs PRN, Glipizide 5mg daily\nAllergies: NKDA\nAssessment: 1. Acute coronary syndrome 2. Chronic low back pain\nPlan: Start antibiotics (Albuterol), follow up in 3 days if not improving\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0026",
+    "note_text": "CC: Sore Throat\nHPI: 18yo female presents with sore throat. Symptoms started 9 days ago. Patient reports intermittent symptoms. Past medical history includes Osteoarthritis.\nMedications: Albuterol 2 puffs PRN\nAllergies: NSAIDs (GI bleeding), Latex (contact dermatitis)\nAssessment: 1. Osteoarthritis 2. Acute coronary syndrome 3. Migraine headache 4. GERD\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Return in 3 months",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0027",
+    "note_text": "CC: Joint Pain\nHPI: 60yo male presents with joint pain. Symptoms started 12 days ago. Patient reports intermittent symptoms. Past medical history includes Urinary tract infection.\nMedications: Amlodipine 5mg daily, Omeprazole 20mg daily, Ibuprofen 400mg TID, Atorvastatin 40mg daily, Lisinopril 10mg daily\nAllergies: NKDA\nAssessment: 1. Urinary tract infection 2. Asthma exacerbation 3. Essential hypertension 4. GERD\nPlan: Start antibiotics (Amlodipine), follow up in 3 days if not improving\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0028",
+    "note_text": "CC: Back Pain\nHPI: 69yo male presents with back pain. Symptoms started 9 days ago. Patient reports intermittent symptoms. Past medical history includes Type 2 diabetes mellitus.\nMedications: Glipizide 5mg daily, Lisinopril 10mg daily, Metformin 500mg BID, Albuterol 2 puffs PRN, Omeprazole 20mg daily\nAllergies: NKDA\nAssessment: 1. Type 2 diabetes mellitus 2. Migraine headache 3. Acute coronary syndrome 4. Essential hypertension\nPlan: CT scan of lumbar spine, follow up with results\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0029",
+    "note_text": "CC: Pregnancy Check-Up\nHPI: 74yo female presents with pregnancy check-up. Symptoms started 5 days ago. Patient reports sudden onset. Past medical history includes Osteoarthritis.\nMedications: Atorvastatin 40mg daily, Glipizide 5mg daily, Prednisone 10mg daily\nAllergies: Aspirin (bronchospasm)\nAssessment: 1. Osteoarthritis 2. Acute coronary syndrome 3. Community-acquired pneumonia 4. GERD\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0030",
+    "note_text": "CC: Back Pain\nHPI: 28yo male presents with back pain. Symptoms started 7 days ago. Patient reports intermittent symptoms. Past medical history includes Chronic low back pain.\nMedications: Albuterol 2 puffs PRN\nAllergies: Sulfa (hives)\nAssessment: 1. Chronic low back pain 2. Generalized anxiety disorder 3. Migraine headache 4. GERD\nPlan: Start antibiotics (Albuterol), follow up in 3 days if not improving\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0031",
+    "note_text": "CC: Annual Physical\nHPI: 20yo female presents with annual physical. Symptoms started 7 days ago. Patient reports sudden onset. No significant past medical history.\nMedications: None\nAllergies: Amoxicillin (rash), NSAIDs (GI bleeding)\nAssessment: 1. Migraine headache 2. Major depressive disorder 3. Asthma exacerbation 4. Iron deficiency anemia\nPlan: Increase medication dosage, recheck labs in 6 weeks\nFollow-up: Return in 3 months",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0032",
+    "note_text": "CC: Cough And Fever\nHPI: 61yo female presents with cough and fever. Symptoms started 14 days ago. Patient reports sudden onset. No significant past medical history.\nMedications: Atorvastatin 40mg daily, Sertraline 50mg daily, Gabapentin 300mg TID\nAllergies: NKDA\nAssessment: 1. Urinary tract infection 2. Iron deficiency anemia 3. Osteoarthritis 4. Type 2 diabetes mellitus\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Return in 1 month",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0033",
+    "note_text": "CC: Skin Rash\nHPI: 51yo female presents with skin rash. Symptoms started 6 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.\nMedications: Prednisone 10mg daily\nAllergies: Aspirin (bronchospasm), Amoxicillin (rash), Latex (contact dermatitis)\nAssessment: 1. Iron deficiency anemia 2. Essential hypertension 3. GERD\nPlan: Continue current medications, follow up in 3 months\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0034",
+    "note_text": "CC: Joint Pain\nHPI: 23yo male presents with joint pain. Symptoms started 4 days ago. Patient reports sudden onset. Past medical history includes Acute coronary syndrome.\nMedications: Acetaminophen 500mg PRN\nAllergies: NKDA\nAssessment: 1. Acute coronary syndrome 2. Hyperlipidemia\nPlan: CT scan of abdomen, follow up with results\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0035",
+    "note_text": "CC: Abdominal Pain\nHPI: 65yo male presents with abdominal pain. Symptoms started 10 days ago. Patient reports intermittent symptoms. Past medical history includes Community-acquired pneumonia.\nMedications: Amlodipine 5mg daily\nAllergies: NKDA\nAssessment: 1. Community-acquired pneumonia\nPlan: Start antibiotics (Amlodipine), follow up in 3 days if not improving\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0036",
+    "note_text": "CC: Sore Throat\nHPI: 49yo male presents with sore throat. Symptoms started 14 days ago. Patient reports sudden onset. Past medical history includes Type 2 diabetes mellitus.\nMedications: Sertraline 50mg daily, Ibuprofen 400mg TID, Metformin 500mg BID, Acetaminophen 500mg PRN, Lisinopril 10mg daily\nAllergies: Iodine contrast (anaphylaxis), Penicillin (rash), Aspirin (bronchospasm)\nAssessment: 1. Type 2 diabetes mellitus 2. Chronic low back pain 3. GERD\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0037",
+    "note_text": "CC: Post-Surgical Follow-Up\nHPI: 73yo male presents with post-surgical follow-up. Symptoms started 10 days ago. Patient reports intermittent symptoms. Past medical history includes Iron deficiency anemia.\nMedications: Amlodipine 5mg daily, Sertraline 50mg daily, Gabapentin 300mg TID, Prednisone 10mg daily, Aspirin 81mg daily\nAllergies: Iodine contrast (anaphylaxis), Amoxicillin (rash)\nAssessment: 1. Iron deficiency anemia 2. Essential hypertension\nPlan: Refer to neurology for further evaluation\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0038",
+    "note_text": "CC: Annual Physical\nHPI: 61yo male presents with annual physical. Symptoms started 4 days ago. Patient reports gradual onset. Past medical history includes Generalized anxiety disorder.\nMedications: Atorvastatin 40mg daily, Prednisone 10mg daily\nAllergies: NKDA\nAssessment: 1. Generalized anxiety disorder 2. Community-acquired pneumonia 3. Urinary tract infection\nPlan: Refer to gastroenterology for further evaluation\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0039",
+    "note_text": "CC: Pregnancy Check-Up\nHPI: 70yo female presents with pregnancy check-up. Symptoms started 11 days ago. Patient reports intermittent symptoms. Past medical history includes Community-acquired pneumonia.\nMedications: Glipizide 5mg daily\nAllergies: NSAIDs (GI bleeding), Amoxicillin (rash), Penicillin (rash)\nAssessment: 1. Community-acquired pneumonia\nPlan: Increase Glipizide dosage, recheck labs in 6 weeks\nFollow-up: Return in 3 months",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0040",
+    "note_text": "CC: Hypertension Follow-Up\nHPI: 85yo female presents with hypertension follow-up. Symptoms started 8 days ago. Patient reports sudden onset. Past medical history includes Generalized anxiety disorder.\nMedications: Gabapentin 300mg TID, Metoprolol 25mg BID, Ibuprofen 400mg TID, Prednisone 10mg daily, Amlodipine 5mg daily\nAllergies: Sulfa (hives)\nAssessment: 1. Generalized anxiety disorder 2. Essential hypertension\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0041",
+    "note_text": "CC: Abdominal Pain\nHPI: 85yo female presents with abdominal pain. Symptoms started 9 days ago. Patient reports sudden onset. Past medical history includes Community-acquired pneumonia.\nMedications: Amlodipine 5mg daily\nAllergies: NKDA\nAssessment: 1. Community-acquired pneumonia 2. Type 2 diabetes mellitus\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Return in 2 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0042",
+    "note_text": "CC: Abdominal Pain\nHPI: 34yo female presents with abdominal pain. Symptoms started 8 days ago. Patient reports gradual onset. Past medical history includes Type 2 diabetes mellitus.\nMedications: None\nAllergies: NSAIDs (GI bleeding), Latex (contact dermatitis), Codeine (nausea and vomiting)\nAssessment: 1. Type 2 diabetes mellitus 2. Community-acquired pneumonia\nPlan: CT scan of abdomen, follow up with results\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0043",
+    "note_text": "CC: Back Pain\nHPI: 24yo male presents with back pain. Symptoms started 1 days ago. Patient reports intermittent symptoms. Past medical history includes GERD.\nMedications: Amlodipine 5mg daily, Metformin 500mg BID, Omeprazole 20mg daily, Ibuprofen 400mg TID\nAllergies: Latex (contact dermatitis), Amoxicillin (rash), Aspirin (bronchospasm)\nAssessment: 1. GERD 2. Iron deficiency anemia 3. Community-acquired pneumonia 4. Urinary tract infection\nPlan: Start antibiotics (Amlodipine), follow up in 3 days if not improving\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0044",
+    "note_text": "CC: Dizziness\nHPI: 30yo male presents with dizziness. Symptoms started 12 days ago. Patient reports intermittent symptoms. Past medical history includes Migraine headache.\nMedications: Aspirin 81mg daily, Metformin 500mg BID\nAllergies: NKDA\nAssessment: 1. Migraine headache 2. Essential hypertension\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Follow up in 6 weeks",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0045",
+    "note_text": "CC: Sore Throat\nHPI: 22yo male presents with sore throat. Symptoms started 14 days ago. Patient reports gradual onset. No significant past medical history.\nMedications: Amlodipine 5mg daily, Glipizide 5mg daily, Prednisone 10mg daily, Metformin 500mg BID, Omeprazole 20mg daily\nAllergies: Amoxicillin (rash)\nAssessment: 1. Migraine headache\nPlan: Increase Amlodipine dosage, recheck labs in 6 weeks\nFollow-up: Return in 3 months",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0046",
+    "note_text": "CC: Sore Throat\nHPI: 39yo female presents with sore throat. Symptoms started 5 days ago. Patient reports gradual onset. No significant past medical history.\nMedications: Metformin 500mg BID, Prednisone 10mg daily, Glipizide 5mg daily\nAllergies: Aspirin (bronchospasm), NSAIDs (GI bleeding), Amoxicillin (rash)\nAssessment: 1. GERD 2. Essential hypertension 3. Urinary tract infection 4. Type 2 diabetes mellitus\nPlan: Start antibiotics (Metformin), follow up in 3 days if not improving\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0047",
+    "note_text": "CC: Shortness Of Breath\nHPI: 20yo female presents with shortness of breath. Symptoms started 11 days ago. Patient reports gradual onset. Past medical history includes Osteoarthritis.\nMedications: Prednisone 10mg daily\nAllergies: Aspirin (bronchospasm), Sulfa (hives), NSAIDs (GI bleeding)\nAssessment: 1. Osteoarthritis 2. GERD 3. Essential hypertension 4. Asthma exacerbation\nPlan: EKG stat, troponins q6h, cardiology consult\nFollow-up: Return in 3 months",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0048",
+    "note_text": "CC: Annual Physical\nHPI: 60yo female presents with annual physical. Symptoms started 14 days ago. Patient reports gradual onset. Past medical history includes Essential hypertension.\nMedications: Aspirin 81mg daily, Albuterol 2 puffs PRN\nAllergies: None documented\nAssessment: 1. Essential hypertension 2. Generalized anxiety disorder 3. Community-acquired pneumonia 4. Asthma exacerbation\nPlan: Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks\nFollow-up: Reassess in 6 hours",
+    "locale": "en"
+  },
+  {
+    "note_id": "synth-0049",
+    "note_text": "CC: Shortness Of Breath\nHPI: 77yo female presents with shortness of breath. Symptoms started 8 days ago. Patient reports gradual onset. No significant past medical history.\nMedications: Gabapentin 300mg TID\nAllergies: NSAIDs (GI bleeding), Amoxicillin (rash), Penicillin (rash)\nAssessment: 1. Community-acquired pneumonia 2. Migraine headache\nPlan: Start physical therapy, reassess in 4 weeks\nFollow-up: Return in 2 weeks for medication review",
+    "locale": "en"
+  }
+]

@@ -1,0 +1,2411 @@
+[
+  {
+    "note_id": "synth-0000",
+    "record": {
+      "chief_complaint": "Fatigue",
+      "hpi": "32yo male presents with fatigue. Symptoms started 1 days ago. Patient reports gradual onset. Past medical history includes Osteoarthritis.",
+      "assessment": [
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 32-year-old male presenting with fatigue. Currently on 1 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0001",
+    "record": {
+      "chief_complaint": "Pregnancy Check-Up",
+      "hpi": "82yo male presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports sudden onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        },
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start antibiotics (Glipizide), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        },
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 82-year-old male presenting with pregnancy check-up. Currently on 1 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0002",
+    "record": {
+      "chief_complaint": "Anxiety",
+      "hpi": "66yo male presents with anxiety. Symptoms started 2 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.",
+      "assessment": [
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        }
+      ],
+      "plan": "EKG stat, troponins q6h, cardiology consult",
+      "medications": [
+        {
+          "name": "Sertraline",
+          "dose": "50mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Sulfa",
+          "reaction": "hives",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        },
+        {
+          "substance": "Penicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 66-year-old male presenting with anxiety. Currently on 2 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0003",
+    "record": {
+      "chief_complaint": "Joint Pain",
+      "hpi": "55yo male presents with joint pain. Symptoms started 12 days ago. Patient reports gradual onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "Iodine contrast",
+          "reaction": "anaphylaxis",
+          "severity": "severe"
+        },
+        {
+          "substance": "Sulfa",
+          "reaction": "hives",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Codeine",
+          "reaction": "nausea and vomiting",
+          "severity": "mild"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 55-year-old male presenting with joint pain. Currently on 0 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0004",
+    "record": {
+      "chief_complaint": "Pregnancy Check-Up",
+      "hpi": "66yo female presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports intermittent symptoms. Past medical history includes Iron deficiency anemia.",
+      "assessment": [
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "EKG stat, troponins q6h, cardiology consult",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 66-year-old female presenting with pregnancy check-up. Currently on 1 medications. 0 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0005",
+    "record": {
+      "chief_complaint": "Annual Physical",
+      "hpi": "58yo male presents with annual physical. Symptoms started 10 days ago. Patient reports sudden onset. Past medical history includes Major depressive disorder.",
+      "assessment": [
+        {
+          "description": "Major depressive disorder",
+          "status": "active"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        }
+      ],
+      "plan": "Refer to pulmonology for further evaluation",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 58-year-old male presenting with annual physical. Currently on 3 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0006",
+    "record": {
+      "chief_complaint": "Headache",
+      "hpi": "35yo female presents with headache. Symptoms started 14 days ago. Patient reports gradual onset. Past medical history includes Urinary tract infection.",
+      "assessment": [
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        },
+        {
+          "description": "Major depressive disorder",
+          "status": "active"
+        }
+      ],
+      "plan": "CT scan of head, follow up with results",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "Codeine",
+          "reaction": "nausea and vomiting",
+          "severity": "mild"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 35-year-old female presenting with headache. Currently on 0 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0007",
+    "record": {
+      "chief_complaint": "Skin Rash",
+      "hpi": "32yo female presents with skin rash. Symptoms started 2 days ago. Patient reports intermittent symptoms. Past medical history includes GERD.",
+      "assessment": [
+        {
+          "description": "GERD",
+          "status": "chronic"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Refer to gastroenterology for further evaluation",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 32-year-old female presenting with skin rash. Currently on 0 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0008",
+    "record": {
+      "chief_complaint": "Back Pain",
+      "hpi": "82yo male presents with back pain. Symptoms started 1 days ago. Patient reports gradual onset. Past medical history includes GERD.",
+      "assessment": [
+        {
+          "description": "GERD",
+          "status": "chronic"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "EKG stat, troponins q6h, cardiology consult",
+      "medications": [
+        {
+          "name": "Ibuprofen",
+          "dose": "400mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 82-year-old male presenting with back pain. Currently on 2 medications. 0 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0009",
+    "record": {
+      "chief_complaint": "Annual Physical",
+      "hpi": "28yo male presents with annual physical. Symptoms started 12 days ago. Patient reports gradual onset. Past medical history includes Migraine headache.",
+      "assessment": [
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        }
+      ],
+      "plan": "Start antibiotics (medication), follow up in 3 days if not improving",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "Codeine",
+          "reaction": "nausea and vomiting",
+          "severity": "mild"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 28-year-old male presenting with annual physical. Currently on 0 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0010",
+    "record": {
+      "chief_complaint": "Medication Review",
+      "hpi": "69yo female presents with medication review. Symptoms started 2 days ago. Patient reports intermittent symptoms. Past medical history includes Urinary tract infection.",
+      "assessment": [
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        }
+      ],
+      "plan": "Increase Prednisone dosage, recheck labs in 6 weeks",
+      "medications": [
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 69-year-old female presenting with medication review. Currently on 4 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0011",
+    "record": {
+      "chief_complaint": "Shortness Of Breath",
+      "hpi": "47yo male presents with shortness of breath. Symptoms started 4 days ago. Patient reports gradual onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        },
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        }
+      ],
+      "plan": "CT scan of lumbar spine, follow up with results",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [
+        "Shortness of breath"
+      ],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 47-year-old male presenting with shortness of breath. Currently on 2 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0012",
+    "record": {
+      "chief_complaint": "Hypertension Follow-Up",
+      "hpi": "73yo female presents with hypertension follow-up. Symptoms started 4 days ago. Patient reports gradual onset. Past medical history includes Chronic low back pain.",
+      "assessment": [
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        }
+      ],
+      "plan": "EKG stat, troponins q6h, cardiology consult",
+      "medications": [
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 73-year-old female presenting with hypertension follow-up. Currently on 3 medications. 0 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0013",
+    "record": {
+      "chief_complaint": "Cough And Fever",
+      "hpi": "35yo female presents with cough and fever. Symptoms started 7 days ago. Patient reports sudden onset. Past medical history includes Asthma exacerbation.",
+      "assessment": [
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Continue current medications, follow up in 3 months",
+      "medications": [
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 35-year-old female presenting with cough and fever. Currently on 2 medications. 0 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0014",
+    "record": {
+      "chief_complaint": "Cough And Fever",
+      "hpi": "69yo male presents with cough and fever. Symptoms started 12 days ago. Patient reports sudden onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        },
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        }
+      ],
+      "plan": "Continue current medications, follow up in 3 months",
+      "medications": [
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        },
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        },
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        },
+        {
+          "substance": "Iodine contrast",
+          "reaction": "anaphylaxis",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 69-year-old male presenting with cough and fever. Currently on 3 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0015",
+    "record": {
+      "chief_complaint": "Shortness Of Breath",
+      "hpi": "79yo male presents with shortness of breath. Symptoms started 10 days ago. Patient reports gradual onset. Past medical history includes Chronic low back pain.",
+      "assessment": [
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Increase Metformin dosage, recheck labs in 6 weeks",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Acetaminophen",
+          "dose": "500mg",
+          "frequency": "PRN",
+          "route": "PO"
+        },
+        {
+          "name": "Sertraline",
+          "dose": "50mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [
+        "Shortness of breath"
+      ],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 79-year-old male presenting with shortness of breath. Currently on 4 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0016",
+    "record": {
+      "chief_complaint": "Fatigue",
+      "hpi": "84yo female presents with fatigue. Symptoms started 8 days ago. Patient reports intermittent symptoms. Past medical history includes Hyperlipidemia.",
+      "assessment": [
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        },
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        }
+      ],
+      "plan": "CT scan of abdomen, follow up with results",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 84-year-old female presenting with fatigue. Currently on 1 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0017",
+    "record": {
+      "chief_complaint": "Pregnancy Check-Up",
+      "hpi": "30yo male presents with pregnancy check-up. Symptoms started 12 days ago. Patient reports sudden onset. Past medical history includes Essential hypertension.",
+      "assessment": [
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Refer to endocrinology for further evaluation",
+      "medications": [
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 30-year-old male presenting with pregnancy check-up. Currently on 1 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0018",
+    "record": {
+      "chief_complaint": "Pregnancy Check-Up",
+      "hpi": "85yo male presents with pregnancy check-up. Symptoms started 4 days ago. Patient reports intermittent symptoms. Past medical history includes Essential hypertension.",
+      "assessment": [
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 85-year-old male presenting with pregnancy check-up. Currently on 2 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0019",
+    "record": {
+      "chief_complaint": "Fatigue",
+      "hpi": "51yo female presents with fatigue. Symptoms started 5 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.",
+      "assessment": [
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        },
+        {
+          "description": "Major depressive disorder",
+          "status": "active"
+        }
+      ],
+      "plan": "EKG stat, troponins q6h, cardiology consult",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 51-year-old female presenting with fatigue. Currently on 0 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0020",
+    "record": {
+      "chief_complaint": "Abdominal Pain",
+      "hpi": "72yo male presents with abdominal pain. Symptoms started 6 days ago. Patient reports gradual onset. Past medical history includes Urinary tract infection.",
+      "assessment": [
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start antibiotics (medication), follow up in 3 days if not improving",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "Penicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 3 months",
+      "patient_summary_plain_language": "Patient is a 72-year-old male presenting with abdominal pain. Currently on 0 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0021",
+    "record": {
+      "chief_complaint": "Abdominal Pain",
+      "hpi": "44yo male presents with abdominal pain. Symptoms started 13 days ago. Patient reports intermittent symptoms. Past medical history includes Chronic low back pain.",
+      "assessment": [
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Ibuprofen",
+          "dose": "400mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Codeine",
+          "reaction": "nausea and vomiting",
+          "severity": "mild"
+        },
+        {
+          "substance": "Sulfa",
+          "reaction": "hives",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 44-year-old male presenting with abdominal pain. Currently on 2 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0022",
+    "record": {
+      "chief_complaint": "Cough And Fever",
+      "hpi": "49yo female presents with cough and fever. Symptoms started 6 days ago. Patient reports sudden onset. Past medical history includes Generalized anxiety disorder.",
+      "assessment": [
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Major depressive disorder",
+          "status": "active"
+        }
+      ],
+      "plan": "Continue current medications, follow up in 3 months",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 49-year-old female presenting with cough and fever. Currently on 5 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0023",
+    "record": {
+      "chief_complaint": "Post-Surgical Follow-Up",
+      "hpi": "53yo female presents with post-surgical follow-up. Symptoms started 6 days ago. Patient reports intermittent symptoms. Past medical history includes Hyperlipidemia.",
+      "assessment": [
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        },
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        }
+      ],
+      "plan": "Continue current medications, follow up in 3 months",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Metoprolol",
+          "dose": "25mg",
+          "frequency": "BID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 53-year-old female presenting with post-surgical follow-up. Currently on 3 medications. 0 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0024",
+    "record": {
+      "chief_complaint": "Diabetes Follow-Up",
+      "hpi": "73yo male presents with diabetes follow-up. Symptoms started 6 days ago. Patient reports intermittent symptoms. Past medical history includes Generalized anxiety disorder.",
+      "assessment": [
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        },
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 73-year-old male presenting with diabetes follow-up. Currently on 4 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0025",
+    "record": {
+      "chief_complaint": "Hypertension Follow-Up",
+      "hpi": "56yo female presents with hypertension follow-up. Symptoms started 10 days ago. Patient reports sudden onset. Past medical history includes Acute coronary syndrome.",
+      "assessment": [
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start antibiotics (Albuterol), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        },
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 56-year-old female presenting with hypertension follow-up. Currently on 2 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0026",
+    "record": {
+      "chief_complaint": "Sore Throat",
+      "hpi": "18yo female presents with sore throat. Symptoms started 9 days ago. Patient reports intermittent symptoms. Past medical history includes Osteoarthritis.",
+      "assessment": [
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 3 months",
+      "patient_summary_plain_language": "Patient is a 18-year-old female presenting with sore throat. Currently on 1 medications. 2 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0027",
+    "record": {
+      "chief_complaint": "Joint Pain",
+      "hpi": "60yo male presents with joint pain. Symptoms started 12 days ago. Patient reports intermittent symptoms. Past medical history includes Urinary tract infection.",
+      "assessment": [
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        },
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start antibiotics (Amlodipine), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 60-year-old male presenting with joint pain. Currently on 5 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0028",
+    "record": {
+      "chief_complaint": "Back Pain",
+      "hpi": "69yo male presents with back pain. Symptoms started 9 days ago. Patient reports intermittent symptoms. Past medical history includes Type 2 diabetes mellitus.",
+      "assessment": [
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "CT scan of lumbar spine, follow up with results",
+      "medications": [
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 69-year-old male presenting with back pain. Currently on 5 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0029",
+    "record": {
+      "chief_complaint": "Pregnancy Check-Up",
+      "hpi": "74yo female presents with pregnancy check-up. Symptoms started 5 days ago. Patient reports sudden onset. Past medical history includes Osteoarthritis.",
+      "assessment": [
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 74-year-old female presenting with pregnancy check-up. Currently on 3 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0030",
+    "record": {
+      "chief_complaint": "Back Pain",
+      "hpi": "28yo male presents with back pain. Symptoms started 7 days ago. Patient reports intermittent symptoms. Past medical history includes Chronic low back pain.",
+      "assessment": [
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        },
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start antibiotics (Albuterol), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Sulfa",
+          "reaction": "hives",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 28-year-old male presenting with back pain. Currently on 1 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0031",
+    "record": {
+      "chief_complaint": "Annual Physical",
+      "hpi": "20yo female presents with annual physical. Symptoms started 7 days ago. Patient reports sudden onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Major depressive disorder",
+          "status": "active"
+        },
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        },
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        }
+      ],
+      "plan": "Increase medication dosage, recheck labs in 6 weeks",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        },
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 3 months",
+      "patient_summary_plain_language": "Patient is a 20-year-old female presenting with annual physical. Currently on 0 medications. 2 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0032",
+    "record": {
+      "chief_complaint": "Cough And Fever",
+      "hpi": "61yo female presents with cough and fever. Symptoms started 14 days ago. Patient reports sudden onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        },
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Sertraline",
+          "dose": "50mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 1 month",
+      "patient_summary_plain_language": "Patient is a 61-year-old female presenting with cough and fever. Currently on 3 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0033",
+    "record": {
+      "chief_complaint": "Skin Rash",
+      "hpi": "51yo female presents with skin rash. Symptoms started 6 days ago. Patient reports gradual onset. Past medical history includes Iron deficiency anemia.",
+      "assessment": [
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Continue current medications, follow up in 3 months",
+      "medications": [
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 51-year-old female presenting with skin rash. Currently on 1 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0034",
+    "record": {
+      "chief_complaint": "Joint Pain",
+      "hpi": "23yo male presents with joint pain. Symptoms started 4 days ago. Patient reports sudden onset. Past medical history includes Acute coronary syndrome.",
+      "assessment": [
+        {
+          "description": "Acute coronary syndrome",
+          "status": "active"
+        },
+        {
+          "description": "Hyperlipidemia",
+          "status": "chronic"
+        }
+      ],
+      "plan": "CT scan of abdomen, follow up with results",
+      "medications": [
+        {
+          "name": "Acetaminophen",
+          "dose": "500mg",
+          "frequency": "PRN",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 23-year-old male presenting with joint pain. Currently on 1 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0035",
+    "record": {
+      "chief_complaint": "Abdominal Pain",
+      "hpi": "65yo male presents with abdominal pain. Symptoms started 10 days ago. Patient reports intermittent symptoms. Past medical history includes Community-acquired pneumonia.",
+      "assessment": [
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        }
+      ],
+      "plan": "Start antibiotics (Amlodipine), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 65-year-old male presenting with abdominal pain. Currently on 1 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0036",
+    "record": {
+      "chief_complaint": "Sore Throat",
+      "hpi": "49yo male presents with sore throat. Symptoms started 14 days ago. Patient reports sudden onset. Past medical history includes Type 2 diabetes mellitus.",
+      "assessment": [
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        },
+        {
+          "description": "Chronic low back pain",
+          "status": "chronic"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [
+        {
+          "name": "Sertraline",
+          "dose": "50mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Acetaminophen",
+          "dose": "500mg",
+          "frequency": "PRN",
+          "route": "PO"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Iodine contrast",
+          "reaction": "anaphylaxis",
+          "severity": "severe"
+        },
+        {
+          "substance": "Penicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 49-year-old male presenting with sore throat. Currently on 5 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0037",
+    "record": {
+      "chief_complaint": "Post-Surgical Follow-Up",
+      "hpi": "73yo male presents with post-surgical follow-up. Symptoms started 10 days ago. Patient reports intermittent symptoms. Past medical history includes Iron deficiency anemia.",
+      "assessment": [
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Refer to neurology for further evaluation",
+      "medications": [
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Sertraline",
+          "dose": "50mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Iodine contrast",
+          "reaction": "anaphylaxis",
+          "severity": "severe"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 73-year-old male presenting with post-surgical follow-up. Currently on 5 medications. 2 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0038",
+    "record": {
+      "chief_complaint": "Annual Physical",
+      "hpi": "61yo male presents with annual physical. Symptoms started 4 days ago. Patient reports gradual onset. Past medical history includes Generalized anxiety disorder.",
+      "assessment": [
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        }
+      ],
+      "plan": "Refer to gastroenterology for further evaluation",
+      "medications": [
+        {
+          "name": "Atorvastatin",
+          "dose": "40mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 61-year-old male presenting with annual physical. Currently on 2 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0039",
+    "record": {
+      "chief_complaint": "Pregnancy Check-Up",
+      "hpi": "70yo female presents with pregnancy check-up. Symptoms started 11 days ago. Patient reports intermittent symptoms. Past medical history includes Community-acquired pneumonia.",
+      "assessment": [
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        }
+      ],
+      "plan": "Increase Glipizide dosage, recheck labs in 6 weeks",
+      "medications": [
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Penicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 3 months",
+      "patient_summary_plain_language": "Patient is a 70-year-old female presenting with pregnancy check-up. Currently on 1 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0040",
+    "record": {
+      "chief_complaint": "Hypertension Follow-Up",
+      "hpi": "85yo female presents with hypertension follow-up. Symptoms started 8 days ago. Patient reports sudden onset. Past medical history includes Generalized anxiety disorder.",
+      "assessment": [
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Metoprolol",
+          "dose": "25mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400mg",
+          "frequency": "TID",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Sulfa",
+          "reaction": "hives",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 85-year-old female presenting with hypertension follow-up. Currently on 5 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0041",
+    "record": {
+      "chief_complaint": "Abdominal Pain",
+      "hpi": "85yo female presents with abdominal pain. Symptoms started 9 days ago. Patient reports sudden onset. Past medical history includes Community-acquired pneumonia.",
+      "assessment": [
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 2 weeks",
+      "patient_summary_plain_language": "Patient is a 85-year-old female presenting with abdominal pain. Currently on 1 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0042",
+    "record": {
+      "chief_complaint": "Abdominal Pain",
+      "hpi": "34yo female presents with abdominal pain. Symptoms started 8 days ago. Patient reports gradual onset. Past medical history includes Type 2 diabetes mellitus.",
+      "assessment": [
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        }
+      ],
+      "plan": "CT scan of abdomen, follow up with results",
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        },
+        {
+          "substance": "Codeine",
+          "reaction": "nausea and vomiting",
+          "severity": "mild"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 34-year-old female presenting with abdominal pain. Currently on 0 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0043",
+    "record": {
+      "chief_complaint": "Back Pain",
+      "hpi": "24yo male presents with back pain. Symptoms started 1 days ago. Patient reports intermittent symptoms. Past medical history includes GERD.",
+      "assessment": [
+        {
+          "description": "GERD",
+          "status": "chronic"
+        },
+        {
+          "description": "Iron deficiency anemia",
+          "status": "active"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        }
+      ],
+      "plan": "Start antibiotics (Amlodipine), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Ibuprofen",
+          "dose": "400mg",
+          "frequency": "TID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Latex",
+          "reaction": "contact dermatitis",
+          "severity": "mild"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 24-year-old male presenting with back pain. Currently on 4 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0044",
+    "record": {
+      "chief_complaint": "Dizziness",
+      "hpi": "30yo male presents with dizziness. Symptoms started 12 days ago. Patient reports intermittent symptoms. Past medical history includes Migraine headache.",
+      "assessment": [
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NKDA",
+          "reaction": null,
+          "severity": null
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Follow up in 6 weeks",
+      "patient_summary_plain_language": "Patient is a 30-year-old male presenting with dizziness. Currently on 2 medications. No known allergies."
+    }
+  },
+  {
+    "note_id": "synth-0045",
+    "record": {
+      "chief_complaint": "Sore Throat",
+      "hpi": "22yo male presents with sore throat. Symptoms started 14 days ago. Patient reports gradual onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        }
+      ],
+      "plan": "Increase Amlodipine dosage, recheck labs in 6 weeks",
+      "medications": [
+        {
+          "name": "Amlodipine",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Omeprazole",
+          "dose": "20mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Return in 3 months",
+      "patient_summary_plain_language": "Patient is a 22-year-old male presenting with sore throat. Currently on 5 medications. 1 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0046",
+    "record": {
+      "chief_complaint": "Sore Throat",
+      "hpi": "39yo female presents with sore throat. Symptoms started 5 days ago. Patient reports gradual onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "GERD",
+          "status": "chronic"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "Urinary tract infection",
+          "status": "active"
+        },
+        {
+          "description": "Type 2 diabetes mellitus",
+          "status": "chronic"
+        }
+      ],
+      "plan": "Start antibiotics (Metformin), follow up in 3 days if not improving",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "500mg",
+          "frequency": "BID",
+          "route": "PO"
+        },
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Glipizide",
+          "dose": "5mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        },
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 39-year-old female presenting with sore throat. Currently on 3 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0047",
+    "record": {
+      "chief_complaint": "Shortness Of Breath",
+      "hpi": "20yo female presents with shortness of breath. Symptoms started 11 days ago. Patient reports gradual onset. Past medical history includes Osteoarthritis.",
+      "assessment": [
+        {
+          "description": "Osteoarthritis",
+          "status": "chronic"
+        },
+        {
+          "description": "GERD",
+          "status": "chronic"
+        },
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        }
+      ],
+      "plan": "EKG stat, troponins q6h, cardiology consult",
+      "medications": [
+        {
+          "name": "Prednisone",
+          "dose": "10mg",
+          "frequency": "daily",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Aspirin",
+          "reaction": "bronchospasm",
+          "severity": "severe"
+        },
+        {
+          "substance": "Sulfa",
+          "reaction": "hives",
+          "severity": "moderate"
+        },
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [
+        "Shortness of breath"
+      ],
+      "follow_up": "Return in 3 months",
+      "patient_summary_plain_language": "Patient is a 20-year-old female presenting with shortness of breath. Currently on 1 medications. 3 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0048",
+    "record": {
+      "chief_complaint": "Annual Physical",
+      "hpi": "60yo female presents with annual physical. Symptoms started 14 days ago. Patient reports gradual onset. Past medical history includes Essential hypertension.",
+      "assessment": [
+        {
+          "description": "Essential hypertension",
+          "status": "chronic"
+        },
+        {
+          "description": "Generalized anxiety disorder",
+          "status": "chronic"
+        },
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Asthma exacerbation",
+          "status": "active"
+        }
+      ],
+      "plan": "Order CBC, CMP, lipid panel. Follow up to review results in 2 weeks",
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dose": "81mg",
+          "frequency": "daily",
+          "route": "PO"
+        },
+        {
+          "name": "Albuterol",
+          "dose": "2 puffs",
+          "frequency": "PRN",
+          "route": "inhaled"
+        }
+      ],
+      "allergies": [],
+      "red_flags": [],
+      "follow_up": "Reassess in 6 hours",
+      "patient_summary_plain_language": "Patient is a 60-year-old female presenting with annual physical. Currently on 2 medications. 0 documented allergies."
+    }
+  },
+  {
+    "note_id": "synth-0049",
+    "record": {
+      "chief_complaint": "Shortness Of Breath",
+      "hpi": "77yo female presents with shortness of breath. Symptoms started 8 days ago. Patient reports gradual onset. No significant past medical history.",
+      "assessment": [
+        {
+          "description": "Community-acquired pneumonia",
+          "status": "active"
+        },
+        {
+          "description": "Migraine headache",
+          "status": "active"
+        }
+      ],
+      "plan": "Start physical therapy, reassess in 4 weeks",
+      "medications": [
+        {
+          "name": "Gabapentin",
+          "dose": "300mg",
+          "frequency": "TID",
+          "route": "PO"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "NSAIDs",
+          "reaction": "GI bleeding",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Amoxicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        },
+        {
+          "substance": "Penicillin",
+          "reaction": "rash",
+          "severity": "moderate"
+        }
+      ],
+      "red_flags": [
+        "Shortness of breath"
+      ],
+      "follow_up": "Return in 2 weeks for medication review",
+      "patient_summary_plain_language": "Patient is a 77-year-old female presenting with shortness of breath. Currently on 1 medications. 3 documented allergies."
+    }
+  }
+]

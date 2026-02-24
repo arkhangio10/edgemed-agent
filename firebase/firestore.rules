@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── DEMO namespace ──────────────────────────────────
+    // Any authenticated user (including anonymous) can access their own docs
+    match /demo_users/{uid}/encounters/{encId} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Raw notes are BLOCKED in demo mode — always deny
+    match /demo_users/{uid}/raw_notes/{noteId} {
+      allow read, write: if false;
+    }
+
+    // ── PROD namespace ──────────────────────────────────
+    // Only non-anonymous authenticated users can access prod data
+    match /prod_users/{uid}/encounters/{encId} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == uid
+                         && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    match /prod_users/{uid}/raw_notes/{noteId} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == uid
+                         && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    // ── Idempotency keys (server-side only via Admin SDK) ──
+    // Client access blocked; only Cloud Run service account writes these
+    match /idempotency_keys/{uid}/keys/{keyId} {
+      allow read, write: if false;
+    }
+
+    // ── Default deny ────────────────────────────────────
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

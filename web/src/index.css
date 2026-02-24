@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 12%;
+
+    --primary: 213 94% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 14% 46%;
+
+    --accent: 210 40% 94%;
+    --accent-foreground: 213 94% 48%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 91%;
+    --input: 214 20% 91%;
+    --ring: 213 94% 48%;
+
+    --radius: 0.625rem;
+
+    /* Healthcare semantic tokens */
+    --success: 152 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 14%;
+    --info: 213 94% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --sidebar-background: 210 33% 98%;
+    --sidebar-foreground: 215 25% 27%;
+    --sidebar-primary: 213 94% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 94%;
+    --sidebar-accent-foreground: 213 94% 48%;
+    --sidebar-border: 214 20% 91%;
+    --sidebar-ring: 213 94% 48%;
+
+    /* Custom */
+    --hero-gradient-from: 213 94% 48%;
+    --hero-gradient-to: 199 89% 48%;
+    --badge-low: 0 72% 51%;
+    --badge-med: 38 92% 50%;
+    --badge-high: 152 60% 40%;
+    --surface-elevated: 210 33% 98.5%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 20% 96%;
+    --card: 215 25% 11%;
+    --card-foreground: 210 20% 96%;
+    --popover: 215 25% 11%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 213 94% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 20% 16%;
+    --secondary-foreground: 210 20% 90%;
+    --muted: 215 20% 16%;
+    --muted-foreground: 215 14% 60%;
+    --accent: 215 20% 18%;
+    --accent-foreground: 213 94% 58%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 20% 18%;
+    --input: 215 20% 18%;
+    --ring: 213 94% 58%;
+    --sidebar-background: 215 25% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 213 94% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 16%;
+    --sidebar-accent-foreground: 213 94% 58%;
+    --sidebar-border: 215 20% 18%;
+    --sidebar-ring: 213 94% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+}
+
+@layer utilities {
+  .text-gradient-hero {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--hero-gradient-from)),
+      hsl(var(--hero-gradient-to))
+    );
+  }
+  .bg-gradient-hero {
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--hero-gradient-from)),
+      hsl(var(--hero-gradient-to))
+    );
+  }
+  .bg-surface-elevated {
+    background-color: hsl(var(--surface-elevated));
+  }
+}

@@ -1,0 +1,243 @@
+# EdgeMed Agent — Cursor Rules (Firestore-first + DEMO/PROD + Offline-first + BigQuery metrics)
+
+You are building "EdgeMed Agent": an offline-first clinical documentation agent.
+Primary product: runs fully offline on a clinic PC (no internet required for extraction).
+Cloud is optional: continuity, backup, web demo, analytics.
+
+Two modes:
+- DEMO_MODE: public judges demo, synthetic notes only, no PHI stored in cloud.
+- PROD_MODE: real clinic mode, allows cloud continuity in Firestore with strict access control.
+
+========================================================
+1) PURPOSE
+========================================================
+- Convert free-text clinician notes into structured EHR-grade JSON using MedGemma.
+- Add agentic validation + repair: missing fields, contradictions, confidence_by_field.
+- Work offline: encrypt + queue locally, auto-sync when internet returns.
+- Enable cloud continuity: store structured records in Firestore; allow (optional) raw notes storage in PROD only.
+- Track impact metrics in BigQuery (NO PHI) for dashboards and judge proof.
+
+========================================================
+2) CORE PRINCIPLES
+========================================================
+- OFFLINE-FIRST is mandatory: extraction must work with internet disabled.
+- Same pipeline everywhere: shared schema, prompts, validator for local and cloud.
+- Privacy by design:
+  - NEVER put raw notes in BigQuery (any mode).
+  - NEVER log raw notes in Cloud Logging (any mode).
+  - DEMO_MODE must never store raw notes in cloud.
+
+========================================================
+3) ARCHITECTURE (MUST FOLLOW)
+========================================================
+A) CLOUD MODE (ONLINE)
+- Firebase Hosting: web UI + download offline app
+- Firebase Auth:
+  - DEMO_MODE: Anonymous (Guest, passwordless)
+  - PROD_MODE: standard auth (email/OAuth) or Anonymous disabled
+- Cloud Run (Docker): API /v1/extract, /v1/chat, /v1/sync
+- Firestore: clinical storage for structured records (and optional raw notes in PROD)
+- BigQuery: analytics metrics only (no raw notes)
+- Optional: Looker Studio dashboard fed by BigQuery
+
+B) LOCAL MODE (OFFLINE)
+- Local App (Docker preferred):
+  - Local UI + local inference pipeline (MedGemma)
+  - Validator + repair loop
+  - Encrypted local queue (SQLite + Tink AEAD)
+  - Sync worker -> calls Cloud Run /v1/sync when online
+
+========================================================
+4) DEMO_MODE vs PROD_MODE (STRICT POLICY)
+========================================================
+DEMO_MODE (public judges demo)
+- ONLY synthetic notes allowed.
+- Cloud storage:
+  - Store structured records only (synthetic).
+  - DO NOT store raw note_text anywhere in cloud.
+- Logging/Analytics:
+  - BigQuery: metrics only (no note_text).
+  - Cloud Logging: metadata only.
+
+PROD_MODE (real clinic continuity)
+- Cloud storage:
+  - MUST store structured record in Firestore for continuity.
+  - MAY store raw note_text ONLY if required for continuity and only in Firestore clinical storage
+    under restricted access rules (never in logs or BigQuery).
+- Logging/Analytics:
+  - BigQuery: metrics only (no note_text).
+  - Cloud Logging: metadata only.
+
+========================================================
+5) SECURITY & PRIVACY (NON-NEGOTIABLE)
+========================================================
+- Local queue encryption:
+  - Use Google Tink AEAD to encrypt payload, store ciphertext in SQLite.
+  - Never store plaintext PHI in local queue.
+- Secrets:
+  - Never hardcode secrets.
+  - Use env vars + Secret Manager (cloud).
+- Firestore security rules:
+  - user can only read/write their own data (UID scoping).
+  - DEMO_MODE collections are isolated from PROD_MODE.
+- Add basic rate limiting in Cloud Run for DEMO_MODE (per UID/IP).
+- Never print note_text to stdout in Cloud Run (it ends up in Cloud Logging).
+
+========================================================
+6) API CONTRACTS (CLOUD RUN — VERSIONED)
+========================================================
+POST /v1/extract
+Input:
+{
+  "note_id": "string",
+  "note_text": "string",
+  "locale": "es|en",
+  "schema_version": "string",
+  "mode": "demo|prod"
+}
+Output:
+{
+  "record": { ...structured_json... },
+  "flags": { "missing_fields":[], "contradictions":[], "confidence_by_field":{...}, "completeness_score": number },
+  "model_info": { "name":"medgemma", "version":"...", "runtime":"cloud|local" },
+  "timing_ms": number
+}
+
+POST /v1/chat
+Input:
+{
+  "note_id": "string",
+  "question": "string",
+  "record": { ...structured_json... },
+  "note_text": "string|null",
+  "mode": "demo|prod"
+}
+Output:
+{
+  "answer": "string",
+  "grounded_on": ["record","note"],
+  "safety_notes": ["string"],
+  "timing_ms": number
+}
+
+POST /v1/sync
+Input:
+{
+  "device_id": "string",
+  "mode": "demo|prod",
+  "items": [
+    {
+      "note_id": "string",
+      "record": { ...structured_json... },
+      "created_at": "ISO8601",
+      "schema_version": "string",
+      "idempotency_key": "string",
+      "raw_note_text": "string|null"   // PROD_MODE only; must be null in DEMO_MODE
+    }
+  ]
+}
+Output:
+{
+  "synced": ["note_id", ...],
+  "failed": [{"note_id":"...", "reason":"..."}],
+  "timing_ms": number
+}
+
+GET /v1/health
+Output: { "status":"ok", "version":"...", "model_loaded": true }
+
+Auth:
+- DEMO_MODE: Firebase Anonymous token (Guest)
+- PROD_MODE: Firebase Auth (non-anonymous) recommended
+
+========================================================
+7) FIRESTORE DATA MODEL (FIRESTORE-FIRST)
+========================================================
+Collections (separate demo vs prod):
+- demo_users/{uid}/encounters/{encounterId}
+- prod_users/{uid}/encounters/{encounterId}
+
+Structured record doc fields:
+- note_id, created_at, device_id, schema_version
+- record (structured JSON)
+- flags (missing/contradictions/confidence/completeness_score)
+- model_info
+
+Optional raw note storage (PROD_MODE ONLY):
+- prod_users/{uid}/raw_notes/{noteId}
+  - note_id, created_at, note_text
+Rules:
+- DEMO_MODE: raw_notes collection must not exist or must reject all writes.
+
+========================================================
+8) BIGQUERY (METRICS ONLY — NEVER PHI)
+========================================================
+Dataset: edgemed_analytics
+Tables:
+- extraction_metrics:
+  uid_hash, device_id_hash, note_id_hash, mode,
+  timing_ms, completeness_score,
+  missing_fields_count, contradictions_count,
+  model_version, schema_version, created_at
+- sync_metrics:
+  device_id_hash, mode, synced_count, failed_count, timing_ms, created_at
+- usage_metrics:
+  uid_hash, mode, action_type("extract"|"chat"|"sync"), timing_ms, created_at
+
+Rules:
+- Hash identifiers; NEVER store note_text in BigQuery.
+- BigQuery is analytics only (impact proof + reliability).
+
+========================================================
+9) LOGGING RULES (CLOUD LOGGING)
+========================================================
+Allowed:
+- request_id, uid_hash, endpoint, timing_ms, status_code, counts
+Forbidden:
+- note_text, raw_note_text, full request payloads, full structured records in PROD
+In debug:
+- log only lengths, counts, and hashes (never content).
+
+========================================================
+10) MEDGEMMA PROMPT RULES
+========================================================
+/extract must output VALID JSON ONLY.
+- If missing info: set "unknown" + add to missing_fields.
+- No hallucinations: do not invent meds/doses/tests/dates.
+- Add confidence_by_field (low|medium|high) and completeness_score.
+
+Chat is workflow-only (documentation assistant), grounded strictly on:
+- structured record (required)
+- note_text (optional; PROD only)
+If info is missing -> respond "not documented/unknown" and ask targeted follow-up questions.
+No diagnosis. No general medical advice.
+
+========================================================
+11) LOCAL QUEUE + SYNC (MUST IMPLEMENT)
+========================================================
+- Queue item states: queued, syncing, synced, failed
+- Idempotency: stable note_id + idempotency_key required
+- Retry with exponential backoff
+- Never delete local item until server confirms sync
+
+========================================================
+12) REPRODUCIBILITY (HACKATHON CRITICAL)
+========================================================
+Provide deterministic DEMO dataset and evaluation:
+- /scripts/generate_synth_dataset.py (seeded)
+- /scripts/eval_pipeline.py producing:
+  - field-level F1/exact match (allergies/meds/problems) against synthetic truth
+  - critical recall (missed allergy/med)
+  - avg latency per note
+DEMO_MODE must run without any private data.
+
+========================================================
+13) DEFINITION OF DONE
+========================================================
+- Offline extraction works with internet disabled (local mode).
+- Local queue is encrypted and syncs automatically when internet returns.
+- Public web demo works with passwordless Guest access (DEMO_MODE).
+- DEMO_MODE never stores raw notes in cloud.
+- PROD_MODE supports continuity in Firestore (structured + optional raw note).
+- BigQuery receives only metrics; Cloud Logging contains no raw notes.
+- Eval scripts run end-to-end and output reproducible metrics.

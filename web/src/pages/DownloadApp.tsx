@@ -1,0 +1,191 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Download, Terminal, Shield, Copy, Check } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+
+const steps = [
+  { step: "1", title: "Install Docker Desktop", desc: "Download from docker.com and ensure Docker is running." },
+  { step: "2", title: "Clone & Run", desc: "Clone the repository and start the containers." },
+  { step: "3", title: "Open Local UI", desc: "Navigate to http://localhost:8501 in your browser." },
+  { step: "4", title: "Use Offline", desc: "Extraction works without internet. Sync happens when connectivity returns." },
+];
+
+const REPO_URL = "https://github.com/your-org/edgemed-agent";
+
+export default function DownloadApp() {
+  const { toast } = useToast();
+  const [copied, setCopied] = useState(false);
+
+  const cloneCommand = `git clone ${REPO_URL}.git\ncd edgemed-agent\ndocker compose up`;
+
+  const handleCopyCommand = async () => {
+    try {
+      await navigator.clipboard.writeText(cloneCommand);
+      setCopied(true);
+      toast({ title: "Commands copied to clipboard" });
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast({ title: "Could not copy — please select and copy manually", variant: "destructive" });
+    }
+  };
+
+  const handleDownloadDocker = () => {
+    // Generate a docker-compose.yml as a downloadable file
+    const dockerCompose = `# EdgeMed Agent — Docker Compose
+# Run: docker compose up
+version: "3.9"
+
+services:
+  cloud-api:
+    build:
+      context: .
+      dockerfile: cloud/Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - EDGEMED_DEMO_MODE_ENABLED=true
+
+  local-api:
+    build:
+      context: .
+      dockerfile: local/Dockerfile
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    environment:
+      - EDGEMED_CLOUD_API_URL=http://cloud-api:8080
+
+  streamlit-ui:
+    build:
+      context: .
+      dockerfile: local/Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - LOCAL_API_URL=http://local-api:8081
+    depends_on:
+      - local-api
+`;
+
+    const blob = new Blob([dockerCompose], { type: "text/yaml" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "docker-compose.yml";
+    a.click();
+    URL.revokeObjectURL(url);
+    toast({ title: "docker-compose.yml downloaded", description: "Place it in the cloned repo root and run: docker compose up" });
+  };
+
+  const handleDownloadNotes = () => {
+    const notes = [
+      {
+        filename: "sample_en.txt",
+        content: `Patient: Maria Gonzalez, 54F\nChief Complaint: "I've been having chest pain for the past 3 days"\nHPI: 54-year-old female presents with substernal chest pain, described as pressure-like, radiating to the left arm. Pain is worse with exertion and relieved by rest. No associated shortness of breath, nausea, or diaphoresis. Patient has a history of hypertension and type 2 diabetes.\nMedications: Metformin 1000mg BID, Lisinopril 20mg daily, Atorvastatin 40mg daily\nAllergies: Penicillin (rash)\nAssessment/Plan:\n1. Chest pain - rule out ACS. Order troponin, EKG, CXR. Start aspirin 325mg.\n2. Hypertension - poorly controlled. Increase lisinopril to 40mg daily.\n3. Diabetes - continue metformin. Check HbA1c.\nFollow-up in 1 week or sooner if symptoms worsen.`,
+      },
+      {
+        filename: "sample_es.txt",
+        content: `Paciente: María González, 54F\nMotivo de consulta: "He tenido dolor en el pecho durante los últimos 3 días"\nHistoria: Mujer de 54 años presenta dolor torácico subesternal, descrito como presión, irradiado al brazo izquierdo.\nMedicamentos: Metformina 1000mg BID, Lisinopril 20mg diario, Atorvastatina 40mg diario\nAlergias: Penicilina (erupción)\nPlan: Descartar SCA. Troponina, EKG, RX tórax. Aspirina 325mg.`,
+      },
+    ];
+
+    // Download each as a separate text file
+    notes.forEach((note) => {
+      const blob = new Blob([note.content], { type: "text/plain" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = note.filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+    toast({ title: "Demo notes downloaded", description: "2 sample clinical notes (EN + ES)" });
+  };
+
+  return (
+    <div className="space-y-6 max-w-3xl">
+      <div>
+        <h2 className="text-lg font-semibold text-foreground">Download Offline App</h2>
+        <p className="text-sm text-muted-foreground mt-1">
+          Run EdgeMed Agent locally for full offline clinical documentation.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap gap-3">
+        <Button
+          id="download-docker-btn"
+          className="gap-2 bg-gradient-hero hover:opacity-90 text-primary-foreground"
+          onClick={handleDownloadDocker}
+        >
+          <Download className="h-4 w-4" />
+          Download Docker Package
+        </Button>
+        <Button
+          id="download-notes-btn"
+          variant="outline"
+          className="gap-2"
+          onClick={handleDownloadNotes}
+        >
+          <Download className="h-4 w-4" />
+          Download Demo Notes Bundle
+        </Button>
+      </div>
+
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-base">Setup Instructions</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          {steps.map((s) => (
+            <div key={s.step} className="flex gap-4">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-bold">
+                {s.step}
+              </div>
+              <div>
+                <p className="font-medium text-foreground text-sm">{s.title}</p>
+                <p className="text-sm text-muted-foreground">{s.desc}</p>
+              </div>
+            </div>
+          ))}
+
+          <div className="rounded-lg bg-muted p-4 relative group">
+            <div className="flex items-center gap-2 mb-2">
+              <Terminal className="h-4 w-4 text-muted-foreground" />
+              <span className="text-xs font-medium text-muted-foreground">Terminal</span>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="ml-auto h-7 px-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                onClick={handleCopyCommand}
+              >
+                {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
+              </Button>
+            </div>
+            <pre className="text-sm font-mono text-foreground">
+              {`git clone ${REPO_URL}.git
+cd edgemed-agent
+docker compose up`}
+            </pre>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="border-success/20 bg-success/5">
+        <CardContent className="flex items-start gap-4 pt-6">
+          <Shield className="h-5 w-5 text-success shrink-0" />
+          <div>
+            <p className="font-medium text-foreground text-sm">Offline Privacy</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              When running locally, all processing happens on your machine. No clinical notes leave the device.
+              MedGemma runs entirely on-device, and sync to the cloud is opt-in and encrypted end-to-end.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
